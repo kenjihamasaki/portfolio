@@ -475,6 +475,22 @@ h1 {
     grid-area: titulo;
   }
 
+  .about {
+    display: grid;
+    width: 100vw;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-areas: "imagen" "info";
+  }
+  
+  .about img {
+    width: 100%;
+    grid-area: imagen;
+  }
+  
+  .about-info {
+    grid-area: info;
+  }
 
 }
 
