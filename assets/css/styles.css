@@ -57,6 +57,14 @@ body {
   color: #66E7C8;
 }
 
+.menu-icon img {
+  filter: invert(100%);
+  height: 40px;
+  width: 50px;
+  padding-right: 20px;
+  display: none;
+}
+
 
 .main {
   margin: 0 auto;
@@ -405,7 +413,7 @@ h1 {
   color: #fff;
 }
 
-.form-group .btn-submit {
+.form-group .download-cv {
   padding: 10px 20px;
   margin: 1em;
   border-radius: 20px;
@@ -453,6 +461,24 @@ h1 {
     background-color: #0a2647;
     color: #fff;
   }
+  .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -200%;
+    background: #222;
+    width: 50%;
+    height: 100vh;
+    transition: 0.3s;
+    z-index: 100;
+  }
+  .menu li {
+    padding: 1rem;
+    display: end;
+    justify-content: end;
+    margin: 0;
+    padding-top: 20px;
+  }
   .main{
     display: grid;
     grid-template-columns: auto;
@@ -460,11 +486,27 @@ h1 {
     grid-template-areas: "imagen" "titulo";    
     width: 100%;
   }
-
+  nav ul li:nth-child() {
+    background: none;
+    padding: 1/2rem; 
+  }
+  .menu-icon:hover + ul {
+    right: 0;
+  }
+  nav ul:hover {
+    right: 0;
+  } 
   .main img{
     grid-area: imagen;
     margin: auto;
     justify-content: center;
+  }
+  .menu-icon img {
+    display: block;
+    top: 20px;
+    right: 10px;
+    display: list-item;
+    padding-right: 0px;
   }
 
   .info-content{
@@ -490,6 +532,10 @@ h1 {
   
   .about-info {
     grid-area: info;
+  }
+  .footer-content h2 {
+    font-size: 3em;
+    text-align: center;
   }
 
 }

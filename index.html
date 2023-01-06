@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>portfolio</title>
-        <link rel="stylesheet" href="assets/css/styles.css">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">      
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"> 
+        <link rel="stylesheet" href="assets/css/styles.css">      
       </head>
       <body>
         <div class="wrapper">
@@ -15,11 +15,12 @@
               <div class="brand">
                 <h2>K<span>H</span></h2>
               </div>
+              <a class="menu-icon"><img src="./assets/img/menu-hamburguesa (1).png" alt=""></a>
               <ul class="menu">
-                <li><a href="#"  class="active">Inicio</a></li>
+                <li><a href="#" class="active">Inicio</a></li>
                 <li><a href="#about">sobre mi</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
               </ul>
             </nav>
           </header>
@@ -31,7 +32,7 @@
             <img src="./assets/img/img-portfolio-1.png" alt="">
           </main>
         </div>
-          <div class="about">
+          <div class="about" id="about">
             <img src="./assets/img/img-programacion.webp" alt="">
             <div class="about-info">
               <h2>sobre mi</h2>
@@ -44,7 +45,7 @@
           <div class="aptitudes">
 
           </div>
-          <div class="portfolio">
+          <div class="portfolio" id="portfolio">
             <div class="portfolio-heading">
               <h2>Mi Portafolio</h2>
               <div class="divider"></div>
@@ -76,7 +77,7 @@
             </div>  
         
           <div class="contact-section">
-            <div class="contact-heading">
+            <div class="contact-heading" id="contacto">
               <h2>Contacto</h2>
               <div class="divider"></div>
             </div>
@@ -87,7 +88,7 @@
                   <input type="text" placeholder="Nombre" class="input">
                   <input type="email" placeholder="Email" class="input">
                   <textarea name="message" placeholder="Escribe tu Mensaje aquí..."></textarea>
-                  <button type="submit" class="btn-submit">Enviar</button>
+                  <button class="download-cv">Enviar</button>
                 </form>
               </div>
             </div>
