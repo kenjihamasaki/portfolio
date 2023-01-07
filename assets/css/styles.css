@@ -12,7 +12,7 @@ body {
 
 .wrapper {
   width: 100vw;
-  height: 100vh;
+  height: 500px;
   background-color: #0a2647;
   color: #fff;
 }
@@ -145,6 +145,34 @@ h1 {
 .about p {
   margin-bottom: 1em;
   color: black;
+}
+
+.aptitudes {
+  display:grid;
+  justify-content:center;
+  width: 100%;
+  align-items: center;
+  grid-template-columns: 100%;
+  grid-template-areas: "titulo" "imagen";
+}
+.aptitudes h2 {
+  font-size: 2em;
+  color: #191c32;
+  grid-area: titulo;
+  text-align:left;
+  margin-top: 20px;
+}
+.aptitudes .imagen{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aptitudes .imagen a img{
+  height: 90px;
+  grid-area: imagen;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
 }
 
 .portfolio,
