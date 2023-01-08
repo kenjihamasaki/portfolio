@@ -110,6 +110,7 @@ h1 {
   width: 300px;
   height: 390px;
   z-index: 1;
+  background-color: gray;
 }
 
 .about {
@@ -145,6 +146,7 @@ h1 {
 .about p {
   margin-bottom: 1em;
   color: black;
+  font-weight: bold;
 }
 
 .aptitudes {
@@ -152,10 +154,8 @@ h1 {
   justify-content:center;
   width: 100%;
   align-items: center;
-  grid-template-columns: 100%;
+  grid-template-columns: 80%;
   grid-template-areas: "titulo" "imagen";
-  margin: 30px;
-  padding: 3em;
 }
 .aptitudes h2 {
   font-size: 2em;
