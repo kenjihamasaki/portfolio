@@ -110,7 +110,7 @@ h1 {
   width: 300px;
   height: 390px;
   z-index: 1;
-  background-color: gray;
+  background: url(../img/low-poly-grid-haikei.png);
 }
 
 .about {
