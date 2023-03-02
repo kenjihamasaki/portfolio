@@ -217,15 +217,13 @@ h1 {
 
 .card {
   width: 300px;
+  height: 380px;
   background-color: #2b3058;
   margin: 1em;
 }
 
-.card__img {
-  width: 100%;
-  height: 150px;
-  background-image: url(../img/proyectoFinal.png);
-  background-size: cover;
+.card__img img{
+  width: 300px ;
 }
 
 .card__title {
@@ -247,8 +245,9 @@ h1 {
 
 .button-content {
   display: flex;
-  justify-content: center;
-  margin: 1em;
+  justify-content: flex-end;
+
+
 }
 
 .project-details-button a {
